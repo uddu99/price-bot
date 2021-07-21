@@ -1,0 +1,45 @@
+<body>
+
+    <div id="root">
+        <table>
+            <tr>
+                <th>InputToken</th>
+            
+                <th>OutputToken</th>
+           
+                <th>InputAmount</th>
+          
+                <th>UniswapReturn</th>
+           
+                <th>KyberExpectedRate</th>
+          
+                <th>KyberMinReturn</th>
+            
+                <th>Timestamp</th>
+         
+            </tr>
+            <% for(var item in datas) { %>
+            <tr>
+                <td><% item["InputToken"] %></td>
+            
+                <td><% item["OutputToken"] %></td>
+           
+                <td><% item["InputAmount"] %></td>
+          
+                <td><% item["UniswapReturn"] %></td>
+           
+                <td><% item["KyberExpectedRate"] %></td>
+          
+                <td><% item["KyberMinReturn"] %></td>
+            
+                <td><% item["Timestamp"] %></td>
+         
+            </tr>
+            <% } %>
+        </table>
+
+
+    </div>
+
+</body>
+  
